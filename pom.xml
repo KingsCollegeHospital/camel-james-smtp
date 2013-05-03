@@ -9,12 +9,12 @@
 	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
 	OF ANY KIND, either express or implied. See the License for the specific 
 	language governing permissions and limitations under the License. -->
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.apache.camel</groupId>
 	<artifactId>camel-james-smtp</artifactId>
 	<name>Camel James SMTP Server</name>
-	<version>2.11-SNAPSHOT</version>
+	<version>${camel.version}</version>
 	<description>Camel component which consume messages via SMTP</description>
 	<url>https://github.com/normanmaurer/camel-smtp</url>
 	<inceptionYear>2010</inceptionYear>
@@ -22,9 +22,10 @@
 
 
 	<properties>
-		<camel.version>2.11-SNAPSHOT</camel.version>
+		<camel.version>2.10.0${fuse.suffix}</camel.version>
 		<james.protocols.version>1.6.3</james.protocols.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <fuse.suffix>.fuse-71-047</fuse.suffix>
 	</properties>
 	<repositories>
 
